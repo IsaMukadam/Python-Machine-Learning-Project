@@ -19,11 +19,6 @@ df.fillna(df.mode().iloc[0], inplace=True)
 
 df.drop_duplicates(inplace=True)
 
-############# Convert Data Types if Necessary #############
-
-# Example: Convert 'date' column to datetime
-df['date'] = pd.to_datetime(df['date'], errors='coerce')
-
 ################## Basic Data Analysis #####################
 
 print("\nData Summary:")
